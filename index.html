@@ -40,7 +40,7 @@
             <li> <a class="tooltip" data-tip="Edit">
                 <svg width="21.000244" height="21.000244" viewBox="0 0 21.0002 21.0002" fill="none"
                   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  
+
                   <defs />
                   <path id="Vector"
                     d="M18 5.62524L15.362 2.9873L17.049 1.29932C17.4007 0.94751 17.8776 0.75 18.375 0.75C18.8724 0.75 19.3493 0.94751 19.701 1.29932C20.0527 1.65088 20.2502 2.12793 20.2502 2.62524C20.2502 3.12256 20.0527 3.59961 19.701 3.95117L5.33197 18.3203C4.80334 18.8486 4.15137 19.2371 3.435 19.4502L0.75 20.2502L1.54999 17.5652C1.76331 16.8489 2.15161 16.197 2.67999 15.6682L15.363 2.9873L15.362 2.9873"
@@ -203,55 +203,16 @@
   <!-- main section -->
   <section>
     <div class="text-center mt-14 mb-12">
-      <h1 class="text-4xl font-extrabold text-center">Let’s Discuss</h1>
+      <h1 class="text-4xl font-extrabold text-center mb-6">Let’s Discuss</h1>
       <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow
         for a streamlined .</p>
     </div>
 
+    <span id="loading-spinner" class="loading loading-spinner loading-lg items-center lg:ml-[700px] hidden"></span>
+
     <!-- card part -->
     <div class="lg:flex gap-6 lg:gap-20 lg:p-12">
-      <div  id="card-container">
-        <!-- <div class="card card-side bg-purple-100 shadow-xl relative">
-           card img -->
-          <!-- <div class="avatar online relative"> -->
-            <!-- <div class="badge badge-sm absolute justify-end"></div>
-            <div class="w-40 h-36 lg:h-48 rounded-2xl">
-              <img class="rounded-3xl" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-            </div>
-          </div> -->
-          <!-- <div class="card-body">
-            <div class="flex gap-4">
-              <h1># Music</h1>
-              <p>Author : Awlad Hossain</p>
-            </div>
-
-            <h2 class="card-title">10 Kids Unaware of Their Halloween Costume</h2>
-            <p>It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your prerogative.
-            </p>
-
-            <hr class="border-dashed bg-black">
-
-            <div class="flex gap-4 lg:gap-16">
-
-              <div class="flex"><img src="images/tabler-icon-message-2.png" alt="">
-                <p>560</p>
-              </div>
-              <div class="flex"><img src="images/Group 16.png" alt="">
-                <p>1,568</p>
-              </div>
-              <div class="flex"><img src="images/Group 18.png" alt="">
-                <p>5 min</p>
-              </div>
-
-            </div>
-
-            <div class="card-actions justify-end">
-              card button -->
-              <!-- <button onclick="button()"><img src="images/card-btn.png" alt="">
-              </button>
-            </div>
-          </div>
-        </div>  -->
+      <div id="card-container">
       </div>
 
       <div>
@@ -260,7 +221,7 @@
             <p class="text-xl font-bold text-black">Title</p>
             <p class="text-[1/2px] font-bold text-black">mark as read <span>0</span></p>
 
-            
+
 
 
           </div>
@@ -294,97 +255,34 @@
 
     <!-- card part two -->
     <!-- card 1 -->
-    <div class="lg:flex lg:gap-8 ml-4 lg:ml-36 items-center">
-      <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-          <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
-            class="rounded-xl" />
-        </figure>
-        <div class="card-body justify-end">
-          <div class="flex">
-            <img src="images/date.png" alt="">
-            <p>.......</p>
-          </div>
-          <h1>.......</h1>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div class="img-actions flex">
-            <img src="images/date.png" alt="">
-            <div>
-              <h1>...</h1>
-              <p>...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- card 2 -->
-      <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-          <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
-            class="rounded-xl" />
-        </figure>
-        <div class="card-body justify-end">
-          <div class="flex">
-            <img src="images/date.png" alt="">
-            <p>.......</p>
-          </div>
-          <h1>.......</h1>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div class="img-actions flex">
-            <img src="images/date.png" alt="">
-            <div>
-              <h1>...</h1>
-              <p>...</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- card 3 -->
-      <div class="card w-96 bg-base-100 shadow-xl">
-        <figure class="px-10 pt-10">
-          <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes"
-            class="rounded-xl" />
-        </figure>
-        <div class="card-body justify-end">
-          <div class="flex">
-            <img src="images/date.png" alt="">
-            <p>.......</p>
-          </div>
-          <h1>.......</h1>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div class="img-actions flex">
-            <img src="images/date.png" alt="">
-            <div>
-              <h1>...</h1>
-              <p>...</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="latest-card-container" class="lg:flex lg:gap-8 ml-4 lg:ml-36 items-center">
+
     </div>
 
   </section>
   <!-- footer section -->
   <section>
     <footer class="footer footer-center p-10 bg-gray-300 text-primary-content rounded-2xl lg:w-full mt-14">
-        <p class="font-bold text-4xl text-black">Spark</p> 
-        <p class="text-black">Share your favorite opinion and win and wp forum coffee mug!</p>
+      <p class="font-bold text-4xl text-black">Spark</p>
+      <p class="text-black">Share your favorite opinion and win and wp forum coffee mug!</p>
       <hr class="border-dashed bg-white">
-      
-        <div class="grid grid-flow-col gap-4">
-         <img src="images/3.png" alt="">
-         <img src="images/1.png" alt="">
-         <img src="images/fb.png" alt="">
-          <img src="images/githun.png" alt="">
-        
-        </div>
-    <div class="border-y-2 bg-black w-full h-1">
-      <!-- <hr class="bg-black border-dashed h-10"> -->
-    </div>
+
+      <div class="grid grid-flow-col gap-4">
+        <img src="images/3.png" alt="">
+        <img src="images/1.png" alt="">
+        <img src="images/fb.png" alt="">
+        <img src="images/githun.png" alt="">
+
+      </div>
+      <div class="border-y-2 bg-black w-full h-1">
+        <!-- <hr class="bg-black border-dashed h-10"> -->
+      </div>
       <p class="text-black">2017, All Rights Reserved.</p>
-     
+
     </footer>
 
   </section>
+
   <script src="js/script.js"></script>
 
 </body>

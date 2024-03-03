@@ -2,183 +2,237 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment project</title>
-   <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment project</title>
+  <link rel="stylesheet" href="styles/style.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="font-mulish">
 
-    <!-- navbar section -->
-    <section>
-        <div>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a class="tooltip" data-tip="Home">
-                        <svg width="21.006134" height="19.784180" viewBox="0 0 21.0061 19.7842" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <desc>
-                                    Created with Pixso.
-                            </desc>
-                            <defs/>
-                            <path id="Vector" d="M0.753082 10.0342L9.70706 1.07935C10.1471 0.640137 10.8591 0.640137 11.2981 1.07935L20.2531 10.0342M3.00308 7.78418L3.00308 17.9092C3.00308 18.5303 3.50708 19.0342 4.12808 19.0342L8.25308 19.0342L8.25308 14.1592C8.25308 13.5383 8.75711 13.0342 9.37808 13.0342L11.6281 13.0342C12.2491 13.0342 12.7531 13.5383 12.7531 14.1592L12.7531 19.0342L16.8781 19.0342C17.4991 19.0342 18.0031 18.5303 18.0031 17.9092L18.0031 7.78418M6.75308 19.0342L15.0031 19.0342" stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round"/>
-                        </svg></a></li>
-                      <li>
-                        
-                          <li> <a class="tooltip" data-tip="Details">
-                            <svg width="21.000244" height="21.000244" viewBox="0 0 21.0002 21.0002" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                        Created with Pixso.
-                                </desc>
-                                <defs/>
-                                <path id="Vector" d="M18 5.62524L15.362 2.9873L17.049 1.29932C17.4007 0.94751 17.8776 0.75 18.375 0.75C18.8724 0.75 19.3493 0.94751 19.701 1.29932C20.0527 1.65088 20.2502 2.12793 20.2502 2.62524C20.2502 3.12256 20.0527 3.59961 19.701 3.95117L5.33197 18.3203C4.80334 18.8486 4.15137 19.2371 3.435 19.4502L0.75 20.2502L1.54999 17.5652C1.76331 16.8489 2.15161 16.197 2.67999 15.6682L15.363 2.9873L15.362 2.9873" stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round"/>
-                            </svg>
-                            
-                          </a>
-                             </li>
+  <!-- navbar section -->
+  <section>
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a class="tooltip" data-tip="Home">
+                  <svg width="21.006134" height="19.784180" viewBox="0 0 21.0061 19.7842" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                      Created with Pixso.
+                    </desc>
+                    <defs />
+                    <path id="Vector"
+                      d="M0.753082 10.0342L9.70706 1.07935C10.1471 0.640137 10.8591 0.640137 11.2981 1.07935L20.2531 10.0342M3.00308 7.78418L3.00308 17.9092C3.00308 18.5303 3.50708 19.0342 4.12808 19.0342L8.25308 19.0342L8.25308 14.1592C8.25308 13.5383 8.75711 13.0342 9.37808 13.0342L11.6281 13.0342C12.2491 13.0342 12.7531 13.5383 12.7531 14.1592L12.7531 19.0342L16.8781 19.0342C17.4991 19.0342 18.0031 18.5303 18.0031 17.9092L18.0031 7.78418M6.75308 19.0342L15.0031 19.0342"
+                      stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round" />
+                  </svg></a></li>
+              <li>
 
-                          <li><a class="tooltip" data-tip="Stats">
-                            <svg width="19.500000" height="19.500000" viewBox="0 0 19.5 19.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                        Created with Pixso.
-                                </desc>
-                                <defs/>
-                                <path id="Vector" d="M15.75 5.25L15.75 8.25L15.75 11.25M15.75 8.25L18.75 8.25M15.75 8.25L12.75 8.25M9.51147 6.51147C8.87854 7.14453 8.02008 7.5 7.125 7.5C6.22992 7.5 5.37146 7.14453 4.73853 6.51147C4.10559 5.87866 3.75 5.02002 3.75 4.125C3.75 3.22998 4.10559 2.37134 4.73853 1.73853C5.37146 1.10547 6.22992 0.75 7.125 0.75C8.02008 0.75 8.87854 1.10547 9.51147 1.73853C10.1444 2.37134 10.5 3.22998 10.5 4.125C10.5 5.02002 10.1444 5.87866 9.51147 6.51147ZM0.75 16.875C0.75 15.1843 1.42163 13.5627 2.61719 12.3672C3.81274 11.1716 5.43427 10.5 7.125 10.5C8.81573 10.5 10.4373 11.1716 11.6328 12.3672C12.8284 13.5627 13.5 15.1843 13.5 16.875L13.5 16.9839C11.5755 18.1431 9.37061 18.7539 7.12402 18.75C4.79297 18.75 2.612 18.105 0.75 16.9839L0.75 16.9851L0.75 16.875Z" stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round"/>
-                            </svg>
-                            
-                          </a></li>
-                       
-                      </li>
-                      <li> <a class="tooltip" data-tip="Stats">
-                        <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <desc>
-                                    Created with Pixso.
-                            </desc>
-                            <defs>
-                                <clipPath id="clip5_549">
-                                    <rect id="Frame" width="24.000000" height="24.000000" fill="white" fill-opacity="0"/>
-                                </clipPath>
-                            </defs>
-                            <rect id="Frame" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0"/>
-                            <g clip-path="url(#clip5_549)">
-                                <path id="Vector" d="M3 3L3 4.5L3 15L3 21M3 15L5.77002 14.3069C7.85443 13.7861 10.0564 14.0281 11.978 14.989L12.086 15.043C13.9692 15.9841 16.1227 16.2354 18.172 15.7529L21.286 15.021C20.9046 11.5317 20.903 8.01147 21.281 4.52197L18.171 5.25391C16.1219 5.73584 13.9688 5.48438 12.086 4.54297L11.978 4.48901C10.0564 3.52808 7.85443 3.28613 5.77002 3.80688L3 4.5" stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
-                            </g>
-                        </svg>
-                        
-                      </a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-3xl font-bold">ReTro</a>
+              <li> <a class="tooltip" data-tip="Details">
+                  <svg width="21.000244" height="21.000244" viewBox="0 0 21.0002 21.0002" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                      Created with Pixso.
+                    </desc>
+                    <defs />
+                    <path id="Vector"
+                      d="M18 5.62524L15.362 2.9873L17.049 1.29932C17.4007 0.94751 17.8776 0.75 18.375 0.75C18.8724 0.75 19.3493 0.94751 19.701 1.29932C20.0527 1.65088 20.2502 2.12793 20.2502 2.62524C20.2502 3.12256 20.0527 3.59961 19.701 3.95117L5.33197 18.3203C4.80334 18.8486 4.15137 19.2371 3.435 19.4502L0.75 20.2502L1.54999 17.5652C1.76331 16.8489 2.15161 16.197 2.67999 15.6682L15.363 2.9873L15.362 2.9873"
+                      stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round" />
+                  </svg>
+
+                </a>
+              </li>
+
+              <li><a class="tooltip" data-tip="Stats">
+                  <svg width="19.500000" height="19.500000" viewBox="0 0 19.5 19.5" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                      Created with Pixso.
+                    </desc>
+                    <defs />
+                    <path id="Vector"
+                      d="M15.75 5.25L15.75 8.25L15.75 11.25M15.75 8.25L18.75 8.25M15.75 8.25L12.75 8.25M9.51147 6.51147C8.87854 7.14453 8.02008 7.5 7.125 7.5C6.22992 7.5 5.37146 7.14453 4.73853 6.51147C4.10559 5.87866 3.75 5.02002 3.75 4.125C3.75 3.22998 4.10559 2.37134 4.73853 1.73853C5.37146 1.10547 6.22992 0.75 7.125 0.75C8.02008 0.75 8.87854 1.10547 9.51147 1.73853C10.1444 2.37134 10.5 3.22998 10.5 4.125C10.5 5.02002 10.1444 5.87866 9.51147 6.51147ZM0.75 16.875C0.75 15.1843 1.42163 13.5627 2.61719 12.3672C3.81274 11.1716 5.43427 10.5 7.125 10.5C8.81573 10.5 10.4373 11.1716 11.6328 12.3672C12.8284 13.5627 13.5 15.1843 13.5 16.875L13.5 16.9839C11.5755 18.1431 9.37061 18.7539 7.12402 18.75C4.79297 18.75 2.612 18.105 0.75 16.9839L0.75 16.9851L0.75 16.875Z"
+                      stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round" />
+                  </svg>
+
+                </a></li>
+
+              </li>
+              <li> <a class="tooltip" data-tip="Stats">
+                  <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <desc>
+                      Created with Pixso.
+                    </desc>
+                    <defs>
+                      <clipPath id="clip5_549">
+                        <rect id="Frame" width="24.000000" height="24.000000" fill="white" fill-opacity="0" />
+                      </clipPath>
+                    </defs>
+                    <rect id="Frame" width="24.000000" height="24.000000" fill="#FFFFFF" fill-opacity="0" />
+                    <g clip-path="url(#clip5_549)">
+                      <path id="Vector"
+                        d="M3 3L3 4.5L3 15L3 21M3 15L5.77002 14.3069C7.85443 13.7861 10.0564 14.0281 11.978 14.989L12.086 15.043C13.9692 15.9841 16.1227 16.2354 18.172 15.7529L21.286 15.021C20.9046 11.5317 20.903 8.01147 21.281 4.52197L18.171 5.25391C16.1219 5.73584 13.9688 5.48438 12.086 4.54297L11.978 4.48901C10.0564 3.52808 7.85443 3.28613 5.77002 3.80688L3 4.5"
+                        stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round"
+                        stroke-linecap="round" />
+                    </g>
+                  </svg>
+
+                </a></li>
+            </ul>
+          </div>
+          <a class="text-3xl font-bold"><span class="text-4xl font-extrabold">S</span>park</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal bg-base-200 rounded-box mt-6">
+            <li>
+              <a class="tooltip" data-tip="Home">
+                <svg width="21.006134" height="19.784180" viewBox="0 0 21.0061 19.7842" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                    Created with Pixso.
+                  </desc>
+                  <defs />
+                  <path id="Vector"
+                    d="M0.753082 10.0342L9.70706 1.07935C10.1471 0.640137 10.8591 0.640137 11.2981 1.07935L20.2531 10.0342M3.00308 7.78418L3.00308 17.9092C3.00308 18.5303 3.50708 19.0342 4.12808 19.0342L8.25308 19.0342L8.25308 14.1592C8.25308 13.5383 8.75711 13.0342 9.37808 13.0342L11.6281 13.0342C12.2491 13.0342 12.7531 13.5383 12.7531 14.1592L12.7531 19.0342L16.8781 19.0342C17.4991 19.0342 18.0031 18.5303 18.0031 17.9092L18.0031 7.78418M6.75308 19.0342L15.0031 19.0342"
+                    stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round" />
+                </svg>
+
+              </a>
+            </li>
+            <li>
+              <a class="tooltip" data-tip="Edit">
+                <svg width="21.000244" height="21.000244" viewBox="0 0 21.0002 21.0002" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                    Created with Pixso.
+                  </desc>
+                  <defs />
+                  <path id="Vector"
+                    d="M18 5.62524L15.362 2.9873L17.049 1.29932C17.4007 0.94751 17.8776 0.75 18.375 0.75C18.8724 0.75 19.3493 0.94751 19.701 1.29932C20.0527 1.65088 20.2502 2.12793 20.2502 2.62524C20.2502 3.12256 20.0527 3.59961 19.701 3.95117L5.33197 18.3203C4.80334 18.8486 4.15137 19.2371 3.435 19.4502L0.75 20.2502L1.54999 17.5652C1.76331 16.8489 2.15161 16.197 2.67999 15.6682L15.363 2.9873L15.362 2.9873"
+                    stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round" />
+                </svg>
+
+              </a>
+            </li>
+            <li>
+              <a class="tooltip" data-tip="Add">
+                <svg width="19.500000" height="19.500000" viewBox="0 0 19.5 19.5" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <desc>
+                    Created with Pixso.
+                  </desc>
+                  <defs />
+                  <path id="Vector"
+                    d="M15.75 5.25L15.75 8.25L15.75 11.25M15.75 8.25L18.75 8.25M15.75 8.25L12.75 8.25M9.51147 6.51147C8.87854 7.14453 8.02008 7.5 7.125 7.5C6.22992 7.5 5.37146 7.14453 4.73853 6.51147C4.10559 5.87866 3.75 5.02002 3.75 4.125C3.75 3.22998 4.10559 2.37134 4.73853 1.73853C5.37146 1.10547 6.22992 0.75 7.125 0.75C8.02008 0.75 8.87854 1.10547 9.51147 1.73853C10.1444 2.37134 10.5 3.22998 10.5 4.125C10.5 5.02002 10.1444 5.87866 9.51147 6.51147ZM0.75 16.875C0.75 15.1843 1.42163 13.5627 2.61719 12.3672C3.81274 11.1716 5.43427 10.5 7.125 10.5C8.81573 10.5 10.4373 11.1716 11.6328 12.3672C12.8284 13.5627 13.5 15.1843 13.5 16.875L13.5 16.9839C11.5755 18.1431 9.37061 18.7539 7.12402 18.75C4.79297 18.75 2.612 18.105 0.75 16.9839L0.75 16.9851L0.75 16.875Z"
+                    stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round" />
+                </svg>
+
+              </a>
+            </li>
+
+            <li>
+              <a class="tooltip" data-tip="Flag">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5" />
+                </svg>
+
+
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-blue-300 rounded-full">Sign In</a>
+        </div>
+      </div>
+   
+
+  </section>
+  <!-- banner section -->
+  <section class="p-6 lg:h-[500px] rounded-xl">
+    <div class="hero bg-base-200 rounded-xl bg-violet-900">
+      <div class="hero-content flex-col lg:flex-row-reverse lg:gap-48 lg:p-16">
+        <div class="card shrink-0 lg:w-full lg:max-w-sm shadow-2xl bg-base-100 mr-40 lg:mr-2">
+          <form class="card-body">
+            <div class="form-control">
+              <div class="flex gap-32 lg:gap-40">
+                <div>
+                  <p>Registered Users</p>
+                  <p>Forum</p>
+                  <p>Topics</p>
+                  <p>Replies</p>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal bg-base-200 rounded-box mt-6">
-                        <li>
-                          <a class="tooltip" data-tip="Home">
-                            <svg width="21.006134" height="19.784180" viewBox="0 0 21.0061 19.7842" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                        Created with Pixso.
-                                </desc>
-                                <defs/>
-                                <path id="Vector" d="M0.753082 10.0342L9.70706 1.07935C10.1471 0.640137 10.8591 0.640137 11.2981 1.07935L20.2531 10.0342M3.00308 7.78418L3.00308 17.9092C3.00308 18.5303 3.50708 19.0342 4.12808 19.0342L8.25308 19.0342L8.25308 14.1592C8.25308 13.5383 8.75711 13.0342 9.37808 13.0342L11.6281 13.0342C12.2491 13.0342 12.7531 13.5383 12.7531 14.1592L12.7531 19.0342L16.8781 19.0342C17.4991 19.0342 18.0031 18.5303 18.0031 17.9092L18.0031 7.78418M6.75308 19.0342L15.0031 19.0342" stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round"/>
-                            </svg>
-                            
-                          </a>
-                        </li>
-                        <li>
-                          <a class="tooltip" data-tip="Edit">
-                            <svg width="21.000244" height="21.000244" viewBox="0 0 21.0002 21.0002" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                        Created with Pixso.
-                                </desc>
-                                <defs/>
-                                <path id="Vector" d="M18 5.62524L15.362 2.9873L17.049 1.29932C17.4007 0.94751 17.8776 0.75 18.375 0.75C18.8724 0.75 19.3493 0.94751 19.701 1.29932C20.0527 1.65088 20.2502 2.12793 20.2502 2.62524C20.2502 3.12256 20.0527 3.59961 19.701 3.95117L5.33197 18.3203C4.80334 18.8486 4.15137 19.2371 3.435 19.4502L0.75 20.2502L1.54999 17.5652C1.76331 16.8489 2.15161 16.197 2.67999 15.6682L15.363 2.9873L15.362 2.9873" stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round"/>
-                            </svg>
-                            
-                          </a>
-                        </li>
-                        <li>
-                          <a class="tooltip" data-tip="Add">
-                            <svg width="19.500000" height="19.500000" viewBox="0 0 19.5 19.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <desc>
-                                        Created with Pixso.
-                                </desc>
-                                <defs/>
-                                <path id="Vector" d="M15.75 5.25L15.75 8.25L15.75 11.25M15.75 8.25L18.75 8.25M15.75 8.25L12.75 8.25M9.51147 6.51147C8.87854 7.14453 8.02008 7.5 7.125 7.5C6.22992 7.5 5.37146 7.14453 4.73853 6.51147C4.10559 5.87866 3.75 5.02002 3.75 4.125C3.75 3.22998 4.10559 2.37134 4.73853 1.73853C5.37146 1.10547 6.22992 0.75 7.125 0.75C8.02008 0.75 8.87854 1.10547 9.51147 1.73853C10.1444 2.37134 10.5 3.22998 10.5 4.125C10.5 5.02002 10.1444 5.87866 9.51147 6.51147ZM0.75 16.875C0.75 15.1843 1.42163 13.5627 2.61719 12.3672C3.81274 11.1716 5.43427 10.5 7.125 10.5C8.81573 10.5 10.4373 11.1716 11.6328 12.3672C12.8284 13.5627 13.5 15.1843 13.5 16.875L13.5 16.9839C11.5755 18.1431 9.37061 18.7539 7.12402 18.75C4.79297 18.75 2.612 18.105 0.75 16.9839L0.75 16.9851L0.75 16.875Z" stroke="#12132D" stroke-opacity="0.600000" stroke-width="1.500000" stroke-linejoin="round"/>
-                            </svg>
-                            
-                          </a>
-                        </li>
-
-                        <li>
-                          <a class="tooltip" data-tip="Flag">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 3v1.5M3 21v-6m0 0 2.77-.693a9 9 0 0 1 6.208.682l.108.054a9 9 0 0 0 6.086.71l3.114-.732a48.524 48.524 0 0 1-.005-10.499l-3.11.732a9 9 0 0 1-6.085-.711l-.108-.054a9 9 0 0 0-6.208-.682L3 4.5M3 15V4.5" />
-                              </svg>
-                              
-                            
-                          </a>
-                        </li>
-                      </ul>
-
-                </div>
-                <div class="navbar-end">
-                  <a class="btn bg-blue-300 rounded-full">Sign In</a>
+                <div>
+                  <p>01</p>
+                  <p>05</p>
+                  <p>01</p>
+                  <p>01</p>
                 </div>
               </div>
+            </div>
+          </form>
         </div>
 
-    </section>
-    <!-- banner section -->
-    <section class="p-6 lg:h-[650px] rounded-xl">
-        <div class="hero bg-base-200 rounded-xl">
-            <div class="hero-content flex-col lg:flex-row-reverse">
-                <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                    <form class="card-body">
-                      <div class="form-control">
-                        
-                        <input type="email" placeholder="email" class="input input-bordered" required />
-                      </div>
-                      <div class="form-control">
-                        <label class="label">
-                          <span class="label-text">Password</span>
-                        </label>
-                        <input type="password" placeholder="password" class="input input-bordered" required />
-                        <label class="label">
-                          <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
-                        </label>
-                      </div>
-                      <div class="form-control mt-6">
-                        <button class="btn btn-primary">Login</button>
-                      </div>
-                    </form>
-                  </div>
+        <div class="lg:text-center text-white">
+          <h1 class="lg:text-5xl text-3xl font-bold ml-16 lg:ml-0">Welcome to the <br>
+           <span class="text-purple-500">spark</span> Forum</h1>
+          <p class="lg:py-6 py-4 mr-36 lg:mr-1 items-center">Share your favorite opinion and win<br>and wp forum coffee mug!</p>
+          <label class="input input-bordered flex items-center lg:w-full w-56 lg:gap-3">
+            <input type="text" class="grow" placeholder="Search" />
+           <button class="bg-primary p-3 rounded-xl">Search</button>
+          </label>
+        </div>
 
-              <div class="text-center lg:text-left">
-                <h1 class="text-5xl font-bold">Welcome to the ReTro Forum</h1>
-                <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-              </div>
-             
+      </div>
+    </div>
+
+  </section>
+  <!-- main section -->
+  <section>
+    <div class="text-center">
+      <h1 class="text-4xl font-extrabold">Let’s Discuss</h1>
+      <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+    </div>
+    <!-- card part -->
+    <div class="flex">
+      <div>
+        <div class="card card-side bg-base-100 shadow-xl">
+          <figure><img src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg" alt="Movie"/></figure>
+          <div class="card-body">
+            <h2 class="card-title">New movie is released!</h2>
+            <p>Click the button to watch on Jetflix app.</p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-primary">Watch</button>
             </div>
           </div>
+        </div>
+      </div>
+      <div>
 
-    </section>
-    <!-- main section -->
-    <section>
+      </div>
+    </div>
 
-    </section>
-    <!-- footer section -->
-    <section>
 
-    </section>
-    <script src="js/script.js"></script>
+  </section>
+  <!-- footer section -->
+  <section>
+
+  </section>
+  <script src="js/script.js"></script>
 
 </body>
 

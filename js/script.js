@@ -24,7 +24,7 @@ cardContainer.textContent = '';
         const badgeColor = item.isActive ? 'green' : 'red';
         
         postCard.innerHTML = `
-        <div class="badge badge-lg absolute ml-36 rounded-full"style="background-color: ${badgeColor}"></div>
+        <div class="badge badge-lg absolute lg:ml-36 rounded-full"style="background-color: ${badgeColor}"></div>
         <div class="w-40 h-36 lg:h-48 rounded-2xl">
           <img class="rounded-3xl" src="${item?.image
           }" />
@@ -59,7 +59,7 @@ cardContainer.textContent = '';
     
         <div class="card-actions justify-end">
           <!--card button -->
-          <button onclick="button()"><img src="images/card-btn.png" alt="">
+          <button onclick="handleShowButton()"><img src="images/card-btn.png" alt="">
           </button>
         </div>
       </div>
@@ -134,6 +134,17 @@ const displayLatestCard = latestData =>{
     latestCardContainer.appendChild(latestDataContainer);
 
     })
+}
+
+let count = 0;
+
+const handleShowButton = async (id) =>{
+  count ++;
+  // console.log('ok');
+
+  const buttonContainer = document.getElementById('display-count');
+  buttonContainer.innerText = count;
+
 }
 
 

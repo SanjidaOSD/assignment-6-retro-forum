@@ -103,7 +103,7 @@ const displayLatestCard = latestData =>{
     const latestCardContainer = document.getElementById('latest-card-container');
 
     latestData.forEach(post => {
-        console.log(post);
+        // console.log(post);
     const latestDataContainer = document.createElement('div');
     latestDataContainer.classList = `card w-96 bg-base-100 shadow-xl`;
     latestDataContainer.innerHTML = `
@@ -141,6 +141,11 @@ let count = 0;
 const handleShowButton = async (id) =>{
   count ++;
   // console.log('ok');
+
+  const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts');
+  const data = await res.json();
+  console.log(data);
+  // const items = data.posts;
 
   const buttonContainer = document.getElementById('display-count');
   buttonContainer.innerText = count;

@@ -22,8 +22,9 @@ cardContainer.textContent = '';
         postCard.classList = `card card-side bg-purple-100 mb-6 shadow-xl relative`;
 
         const badgeColor = item.isActive ? 'green' : 'red';
+        
         postCard.innerHTML = `
-        <div class="badge badge-lg absolute rounded-full"style="background-color: ${badgeColor}"></div>
+        <div class="badge badge-lg absolute ml-36 rounded-full"style="background-color: ${badgeColor}"></div>
         <div class="w-40 h-36 lg:h-48 rounded-2xl">
           <img class="rounded-3xl" src="${item?.image
           }" />
@@ -88,7 +89,7 @@ const handleSearch = async () => {
 
 const latestCard = async () => {
     const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/latest-posts');
-    const data = await res.json(); // Await the resolution of the promise
+    const data = await res.json(); 
     const latestData = data.slice(0, 3);
     
     // latestData.forEach(post => {
@@ -114,7 +115,7 @@ const displayLatestCard = latestData =>{
   <div class="card-body justify-end">
     <div class="flex">
       <img src="images/date.png" alt="">
-      <p>${post?.author?.posted_date || 'No publish'}</p>
+      <p>${post?.author?.posted_date || 'No publish date'}</p>
     </div>
     <h1 class="text-xl font-bold">${post?.title}</h1>
     <p>${post?.description}</p>
@@ -137,12 +138,9 @@ const displayLatestCard = latestData =>{
 
 
 
-// document.getElementById('search-button').addEventListener('click', handleSearch);
-
-
 
 latestCard();
 
 handleSearch();
 
-loadCategory(items)
+loadCategory(items);

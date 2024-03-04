@@ -59,7 +59,7 @@ cardContainer.textContent = '';
     
         <div class="card-actions justify-end">
           <!--card button -->
-          <button onclick="handleShowButton()"><img src="images/card-btn.png" alt="">
+          <button onclick="handleShowButton('${item.title}','${item.view_count}')"><img src="images/card-btn.png" alt="">
           </button>
         </div>
       </div>
@@ -138,7 +138,8 @@ const displayLatestCard = latestData =>{
 
 let count = 0;
 
-const handleShowButton = async () =>{
+const handleShowButton = async (title, viewCount) =>{
+  console.log(title,count);
   count ++;
   // console.log('ok');
 
@@ -159,6 +160,7 @@ const handleShowButton = async () =>{
 
 
 
+
     if (count === 0 && values.length > 0) {
       const value = values[0];
     }
@@ -166,10 +168,10 @@ const handleShowButton = async () =>{
     const showValue = document.createElement('div');
     showValue.innerHTML = `
     <div class="flex mb-3 p-10 bg-white w-[400px] rounded-2xl lg:ml-4">
-    <p class="font-bold">${data?.posts?.title}</p>
+    <p class="font-bold">${title}</p>
     <div class="flex gap-4 items-center">
       <img src="images/Group 16.png" alt="">
-      <p>1568</p>
+      <p>${viewCount}</p>
     </div>
   </div>
 
@@ -182,22 +184,10 @@ const handleShowButton = async () =>{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-handleShowButton();
+// handleShowButton();
 
 latestCard();
 
 handleSearch();
 
-loadCategory(items);
+loadCategory();

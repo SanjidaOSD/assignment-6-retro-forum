@@ -138,22 +138,63 @@ const displayLatestCard = latestData =>{
 
 let count = 0;
 
-const handleShowButton = async (id) =>{
+const handleShowButton = async () =>{
   count ++;
   // console.log('ok');
 
   const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts');
   const data = await res.json();
-  console.log(data);
-  // const items = data.posts;
+  // console.log(data.posts);
+  const values = data.posts;
+  console.log(values);
+
+  //   values.forEach(value => {
+  //   console.log(value)
+  // })
 
   const buttonContainer = document.getElementById('display-count');
   buttonContainer.innerText = count;
+
+ const showValueContainer = document.getElementById('show-value-container');
+
+
+
+    if (count === 0 && values.length > 0) {
+      const value = values[0];
+    }
+
+    const showValue = document.createElement('div');
+    showValue.innerHTML = `
+    <div class="flex mb-3 p-10 bg-white w-[400px] rounded-2xl lg:ml-4">
+    <p class="font-bold">${data?.posts?.title}</p>
+    <div class="flex gap-4 items-center">
+      <img src="images/Group 16.png" alt="">
+      <p>1568</p>
+    </div>
+  </div>
+
+    `;
+    showValueContainer.appendChild(showValue);
+  
+
+  
 
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+handleShowButton();
 
 latestCard();
 
